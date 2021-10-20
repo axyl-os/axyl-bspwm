@@ -1,0 +1,58 @@
+;=========================================================
+;
+;
+;   ██████╗  ██████╗ ██╗  ██╗   ██╗██████╗  █████╗ ██████╗
+;   ██╔══██╗██╔═══██╗██║  ╚██╗ ██╔╝██╔══██╗██╔══██╗██╔══██╗
+;   ██████╔╝██║   ██║██║   ╚████╔╝ ██████╔╝███████║██████╔╝
+;   ██╔═══╝ ██║   ██║██║    ╚██╔╝  ██╔══██╗██╔══██║██╔══██╗
+;   ██║     ╚██████╔╝███████╗██║   ██████╔╝██║  ██║██║  ██║
+;   ╚═╝      ╚═════╝ ╚══════╝╚═╝   ╚═════╝ ╚═╝  ╚═╝╚═╝  ╚═╝
+;
+;
+;==========================================================
+
+[global/wm]
+include-file = ~/.config/bspwm/polybar/modules
+include-file = ~/.config/bspwm/polybar/colors
+include-file = ~/.config/bspwm/polybar/system
+
+;  _                    
+; | |__   __ _ _ __  
+; | '_ \ / _` | '__/
+; | |_) | (_| | |  
+; |_.__/ \__,_|_|  
+
+[bar/bar]
+enable-ipc=true
+
+height = 35
+width = 98%
+
+font-0 = Source Code Pro Medium:size=10;2
+font-1 = Iosevka Nerd Font:size=14;4
+
+offset-x = 1%
+offset-y = 1%
+
+radius = 5
+border-size = 0
+
+border-color = ${color.foreground}
+background = ${color.background}
+foreground = ${color.foreground}
+
+tray-position=right
+tray-detached=false
+line-size = 2
+
+padding=1
+
+modules-left =   launcher sep cpu memory filesystem 
+modules-center = bspwm sep mod
+modules-right =  battery sep backlight volume sep time
+
+scroll-up = bspwn-wsnext 
+scroll-down = bspwn-wsprev
+
+override-redirect = false
+wm-restack = bspwm
