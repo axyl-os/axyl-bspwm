@@ -140,7 +140,7 @@ label-private = " | Private"
 type = internal/cpu
 interval = 2
 format-prefix = " "
-format-padding = 2
+format-padding = 0
 format-prefix-foreground = ${color.green}
 format-foreground = ${color.foreground}
 label = %percentage%%
@@ -155,7 +155,7 @@ type = internal/memory
 interval = 1
 
 format = <label>
-format-prefix = 
+format-prefix = "  "
 format-prefix-foreground = ${color.yellow}
 format-foreground = ${color.foreground}
 
