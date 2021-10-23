@@ -29,9 +29,8 @@ bspc config paddingless_monocle true
 bspc config single_monocle false
 bspc config focus_follows_pointer true
 
-# Enable Super Keys For Menu
-ksuperkey -e 'Super_L=Alt_L|F1' &
-ksuperkey -e 'Super_R=Alt_L|F1' &
+# fix pointer
+xsetroot -cursor_name left_ptr
 
 # workspace 1 (Terminals)
 declare -a terminal=(Alacritty Xfce4-terminal)
@@ -71,7 +70,7 @@ bspc rule -a Nm-connection-editor state=floating follow=on focus=on
 ## Autostart
 
 # Kill if already running
-killall -9 picom sxhkd dunst xfce4-power-manager
+killall -9 picom sxhkd dunst xfce4-power-manager ksuperkey
 
 # Launch notification daemon
 dunst \
@@ -79,6 +78,10 @@ dunst \
 -lb "#282a36FF" -lf "#f8f8f2FF" -lfr "#bd93f9FF" \
 -nb "#282a36FF" -nf "#f8f8f2FF" -nfr "#bd93f9FF" \
 -cb "#282a36FF" -cf "#BF616AFF" -cfr "#BF616AFF" &
+
+# Enable Super Keys For Menu
+ksuperkey -e 'Super_L=Alt_L|F1' &
+ksuperkey -e 'Super_R=Alt_L|F1' &
 
 # polkit agent
 if [[ ! `pidof xfce-polkit` ]]; then
@@ -88,14 +91,8 @@ fi
 # Launch keybindings daemon
 sxhkd &
 
-# fix pointer
-xsetroot -cursor_name left_ptr
-
 # Enable power management
 xfce4-power-manager &
-
-# Start mpd
-exec mpd &
 
 # Start udiskie
 udiskie &
