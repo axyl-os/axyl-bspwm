@@ -331,7 +331,7 @@ ramp-capacity-2 = 
 ramp-capacity-3 = 
 ramp-capacity-4 = 
 ramp-capacity-font = 2
-ramp-capacity-foreground = ${color.foreground}
+ramp-capacity-foreground = ${color.cyan}
 
 animation-charging-0 = 
 animation-charging-1 = 
@@ -339,7 +339,7 @@ animation-charging-2 = 
 animation-charging-3 = 
 animation-charging-4 = 
 animation-charging-font = 2
-animation-charging-foreground = ${color.foreground}
+animation-charging-foreground = ${color.green}
 animation-charging-framerate = 750
 
 ##################################################
