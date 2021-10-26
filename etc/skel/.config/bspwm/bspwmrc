@@ -70,7 +70,10 @@ bspc rule -a Nm-connection-editor state=floating follow=on focus=on
 ## Autostart
 
 # Kill if already running
-killall -9 picom sxhkd dunst xfce4-power-manager ksuperkey
+killall -9 picom sxhkd dunst xfce4-power-manager ksuperkey conky
+
+# Launch Conky
+conky -c $HOME/.config/conky/axyl.conkyrc
 
 # Launch notification daemon
 dunst \
