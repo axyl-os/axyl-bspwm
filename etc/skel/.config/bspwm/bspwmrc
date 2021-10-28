@@ -61,11 +61,11 @@ Pavucontrol Xfce4-settings-manager)
 for i in ${settings[@]}; do
     bspc rule -a $i desktop='^6' follow=on focus=on; done
 
-bspc rule -a Lxappearance state=floating follow=on focus=on
-bspc rule -a Arandr state=floating follow=on focus=on
-bspc rule -a Viewnior state=floating follow=on focus=on
-bspc rule -a Pcmanfm state=floating follow=on focus=on
-bspc rule -a Nm-connection-editor state=floating follow=on focus=on
+# floating windows
+declare -a floats=(Alafloat Lxappearance Arandr \
+Viewnior Pcmanfm feh Nm-connection-editor Matplotlib Yad)
+for i in ${floats[@]}; do
+  bspc rule -a $i state=floating follow=on focus=on; done
 
 ## Autostart
 
