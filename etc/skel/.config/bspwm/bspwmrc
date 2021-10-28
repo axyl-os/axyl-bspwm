@@ -102,3 +102,6 @@ udiskie &
 
 # start compositor
 picom --config $HOME/.config/bspwm/picom.conf &
+
+# replace neovim colorscheme
+sed -i "s/theme =.*$/theme = \"chadracula\",/g" $HOME/.config/nvim/lua/chadrc.lua
