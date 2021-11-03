@@ -49,7 +49,7 @@ padding=1
 
 modules-left =   launcher sep cpu memory filesystem 
 modules-center = bspwm sep mod
-modules-right =  battery sep backlight volume sep time
+modules-right =  backlight volume sep battery sep time
 
 scroll-up = bspwn-wsnext 
 scroll-down = bspwn-wsprev
