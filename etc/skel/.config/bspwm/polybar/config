@@ -15,6 +15,7 @@
 include-file = ~/.config/bspwm/polybar/modules
 include-file = ~/.config/bspwm/polybar/colors
 include-file = ~/.config/bspwm/polybar/system
+include-file = ~/.config/bspwm/polybar/decor
 
 ;  _                    
 ; | |__   __ _ _ __  
@@ -49,7 +50,7 @@ padding=1
 
 modules-left =   launcher sep cpu memory filesystem 
 modules-center = bspwm sep mod
-modules-right =  backlight volume sep battery sep time
+modules-right =  backlight spacing volume sep battery sep time
 
 scroll-up = bspwn-wsnext 
 scroll-down = bspwn-wsprev

@@ -1,0 +1,4 @@
+[module/spacing]
+type = custom/text
+content = " "
+content-background = ${color.background}
