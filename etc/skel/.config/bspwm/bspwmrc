@@ -75,10 +75,7 @@ for i in ${floats[@]}; do
 ## Autostart
 
 # Kill if already running
-killall -9 picom sxhkd dunst xfce4-power-manager ksuperkey conky
-
-# Launch Conky
-conky -c $HOME/.config/conky/axyl.conkyrc
+killall -9 picom sxhkd dunst xfce4-power-manager ksuperkey
 
 # Launch notification daemon
 dunst \
@@ -111,7 +108,3 @@ picom --config $HOME/.config/bspwm/picom.conf &
 
 # replace neovim colorscheme
 sed -i "s/theme =.*$/theme = \"chadracula\",/g" $HOME/.config/nvim/lua/chadrc.lua
-
-## Welcome-App-Run-Once
-axyl-welcome &
-sed -i -e '/## Welcome-App-Run-Once/Q' "$HOME"/.config/bspwm/bspwmrc
