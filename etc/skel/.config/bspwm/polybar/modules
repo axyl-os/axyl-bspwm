@@ -189,6 +189,7 @@ format = <label>
 format-prefix = "  "
 format-prefix-foreground = ${color.yellow}
 format-foreground = ${color.foreground}
+
 label = "%{A1:terminal -e htop &:} %mb_used% %{A}"
 
 ##################################################
