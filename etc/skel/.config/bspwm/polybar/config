@@ -44,6 +44,8 @@ padding = 0
 module-margin-left = 0
 module-margin-right = 0
 
+wm-restack = bspwm
+
 font-0 = "Source Code Pro Medium:size=10;3"
 font-1 = "Iosevka Nerd Font:size=12;3"
 font-2 = "Iosevka Nerd Font:size=16;4"
