@@ -1,24 +1,23 @@
 # Font configuration
 font:
-  # Normal (roman) font face
   normal:
-    family: "Source Code Pro Medium"
-    #style: Regular
+    family: "JetBrainsMono Nerd Font"
+    style: Medium
 
   # Bold font face
   bold:
-    family: "Source Code Pro Medium"
-    #style: Bold
+    family: "JetBrainsMono Nerd Font"
+    style: Bold
 
   # Italic font face
   italic:
-    family: "Source Code Pro Medium"
-    #style: Italic
+    family: "JetBrainsMono Nerd Font"
+    style: Italic
 
   # Bold italic font face
   bold_italic:
-    family: "Source Code Pro Medium"
-    #style: Bold Italic
+    family: "JetBrainsMono Nerd Font"
+    style: Bold Italic
 
   # Point size
   size: 10
