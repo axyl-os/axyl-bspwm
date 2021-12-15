@@ -73,7 +73,11 @@ for i in ${floats[@]}; do
 ## Autostart
 
 # Kill if already running
-killall -9 picom sxhkd dunst xfce4-power-manager ksuperkey
+killall -9 picom sxhkd dunst xfce4-power-manager ksuperkey eww
+
+# Launch Conkeww
+sed -i "s/colors\/color-.*/colors\/color-tokyo.yuck\")/g" $HOME/.config/conkeww/eww.yuck
+eww --config $HOME/.config/conkeww/ open conkeww-main
 
 # Launch notification daemon
 dunst -config $HOME/.config/bspwm/dunstrc &
