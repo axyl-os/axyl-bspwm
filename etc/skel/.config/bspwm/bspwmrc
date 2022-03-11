@@ -97,15 +97,12 @@ sxhkd &
 # Enable power management
 xfce4-power-manager &
 
-# Start udiskie
-udiskie &
-
 # start compositor
 while pgrep -u $UID -x picom >/dev/null; do sleep 1; done
 picom --config $HOME/.config/bspwm/picom.conf &
 
 # replace neovim colorscheme
-sed -i "s/theme =.*$/theme = \"tokyonight\",/g" $HOME/.config/nvim/lua/chadrc.lua
+sed -i "s/theme =.*$/theme = \"tokyonight\",/g" $HOME/.config/nvim/lua/custom/chadrc.lua
 
 # change xfce4-terminal colorscheme
 XFCE_TERM_PATH="$HOME/.config/xfce4/terminal"
