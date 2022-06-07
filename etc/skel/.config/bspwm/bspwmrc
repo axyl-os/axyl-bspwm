@@ -6,6 +6,9 @@ bash $HOME/.config/bspwm/.fehbg
 pgrep -x sxhkd > /dev/null || sxhkd &
 $HOME/.config/bspwm/polybar/launch.sh
 
+# Solve java apps issues (e.g. JetBrains IDEs like PyCharm, CLion, etc).
+export _JAVA_AWT_WM_NONREPARENTING=1 
+
 workspaces() {
 	name=1
 	for monitor in `bspc query -M`; do
