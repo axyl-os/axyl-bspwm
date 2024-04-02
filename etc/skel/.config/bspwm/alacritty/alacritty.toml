@@ -1,4 +1,4 @@
-import = ["/home/ygrik/.config/i3/alacritty/colors.toml", "/home/ygrik/.config/i3/alacritty/fonts.toml"]
+import = ["~/.config/i3/alacritty/colors.toml", "~/.config/i3/alacritty/fonts.toml"]
 live_config_reload = true
 
 [cursor]
