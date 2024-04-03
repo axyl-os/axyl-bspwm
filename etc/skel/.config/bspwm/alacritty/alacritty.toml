@@ -1,0 +1,28 @@
+import = ["/home/ygrik/.config/bspwm/alacritty/colors.yml", "/home/ygrik/.config/bspwm/alacritty/fonts.yml"]
+live_config_reload = true
+"window.opacity" = 1.0
+
+[cursor]
+unfocused_hollow = false
+
+[cursor.style]
+blinking = "On"
+shape = "Block"
+
+[env]
+TERM = "alacritty"
+
+[window]
+decorations = "full"
+dynamic_title = true
+history = 10000
+multiplier = 3
+startup_mode = "Windowed"
+
+[window.dimensions]
+columns = 82
+lines = 25
+
+[window.padding]
+x = 12
+y = 12
